@@ -168,5 +168,38 @@ public class Desafio9 {
 ```
 # questao 7
 ```java
+package desafio9;
 
+import java.util.Scanner;
+
+/**
+ * 7. Crie um vetor com 10 elementos inteiros e calcule a média de todos os
+ * elementos. Em seguida, mostre quais valores são maiores que a média.
+ *
+ * @author henrique
+ */
+public class Desafio9 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        int[] nota = new int[10];
+        int i, soma = 0, media;
+        for (i = 0; i < nota.length; i++) {
+            System.out.println("Digite a nota:" + (i + 1) + ":");
+            nota[i] = ler.nextInt();
+            soma += nota[i];
+        }
+
+        media = soma / nota.length;
+        System.out.println("\nMedia das notas:" + media);
+
+        System.out.println("As notas maiores que a media é");
+        for (i = 0; i < nota.length; i++) {
+            if (nota[i] > media) {
+                System.out.println("nota " + (i + 1) + ":" + nota[i]);
+            }
+        }
+    }
+
+}
 ```
