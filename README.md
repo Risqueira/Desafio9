@@ -112,3 +112,28 @@ public class Desafio9 {
 
 }
 ```
+# questao 5
+```java
+package desafio9;
+
+/**
+ * 5. Crie um vetor de 10 elementos inteiros. Multiplique todos os elementos por
+ * 2 e mostre o vetor resultante.
+ *
+ * @author henrique
+ */
+public class Desafio9 {
+
+    public static void main(String[] args) {
+        int[] nI = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        for (int i = 0; i < nI.length; i++) {
+            System.out.println(nI[i] + "x" + 2 + " = " + (nI[i] * 2));
+        }
+    }
+
+}
+```
+# questao 6
+```java
+
+```
