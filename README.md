@@ -56,3 +56,27 @@ public class ProjetoVetores {
 
 }
 ```
+# questao 3
+```java
+package desafio9;
+
+/**
+ * 3. Crie um vetor de 10 elementos inteiros. Depois de preenchê-lo, mostre os
+ * valores na ordem original e, em seguida, na ordem inversa.
+ *
+ * @author henrique
+ */
+public class Desafio9 {
+
+    public static void main(String[] args) {
+        int[] eInteiros = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        for (int elemento : eInteiros) {
+            System.out.println(elemento);
+        }
+        for (int i = eInteiros.length - 1; i >= 0; i--) {
+            System.out.println(eInteiros[i]);
+        }
+    }
+
+}
+```
