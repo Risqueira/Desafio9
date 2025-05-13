@@ -236,3 +236,40 @@ public class Desafio9 {
 
 }
 ```
+# questao 9
+```java
+package desafio9;
+
+import java.util.Scanner;
+
+/**
+ * 9. Crie um vetor de 10 posições com números inteiros. Faça um novo vetor
+ * contendo apenas os valores que são múltiplos de 3.
+ *
+ * @author Henrique
+ */
+public class Desafio9 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        int[] n = new int[10];
+        int[] multiploPorTres = new int[10];
+        int c = 0;
+        for (int i = 0; i < n.length; i++) {
+            System.out.println("Digite um numero:");
+            n[i] = ler.nextInt();
+        }
+        for (int i = 0; i < n.length; i++) {
+            if (n[i] % 3 == 0) {
+                multiploPorTres[c] = n[i];
+                c++;
+            }
+        }
+        System.out.println("Nùmeros múltiplos de 3:");
+        for (int i = 0; i < c; i++) {
+            System.out.println(multiploPorTres[i] + " ");
+        }
+    }
+
+}
+```
