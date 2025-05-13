@@ -80,3 +80,35 @@ public class Desafio9 {
 
 }
 ```
+# questao 4
+```java
+package desafio9;
+
+import java.util.Scanner;
+
+/**
+ * 4. Leia um vetor de 10 posições com números inteiros e conte quantos números
+ * são negativos.
+ *
+ * @author henrique
+ */
+public class Desafio9 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        int[] nInteiros = new int[10];
+        int i, cN = 0;
+
+        for (i = 0; i < nInteiros.length; i++) {
+            System.out.println("Digite um numero");
+            nInteiros[i] = ler.nextInt();
+            if (nInteiros[i] < 0) {
+                cN++;
+            }
+
+        }
+        System.out.println("A quantidade de numeros negativos é:" + cN);
+    }
+
+}
+```
