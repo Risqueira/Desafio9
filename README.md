@@ -203,3 +203,36 @@ public class Desafio9 {
 
 }
 ```
+# questao 8
+```java
+package desafio9;
+
+import java.util.Scanner;
+
+/**
+ * 8. Crie um vetor com 10 elementos inteiros e mostre quantas vezes o número 5
+ * aparece no vetor.
+ *
+ * @author Henrique
+ */
+public class Desafio9 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        int[] n = new int[10];
+        int c = 0;
+        for (int i = 0; i < n.length; i++) {
+            System.out.println("Digite um número:");
+            n[i] = ler.nextInt();
+
+        }
+        for (int i = 0; i < n.length; i++) {
+            if (n[i] == 5) {
+                c++;
+            }
+        }
+        System.out.println("A quantidade de vezes que aparece o número 5 é:" + c);
+    }
+
+}
+```
