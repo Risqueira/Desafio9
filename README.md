@@ -135,5 +135,38 @@ public class Desafio9 {
 ```
 # questao 6
 ```java
+package desafio9;
+
+import java.util.Scanner;
+
+/**
+ * 6. Crie um vetor com 10 números inteiros. Depois de preenchido, substitua
+ * todos os números negativos por zero e mostre o vetor final.
+ *
+ * @author henrique
+ */
+public class Desafio9 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        int i;
+        int[] nI = new int[10];
+        for (i = 0; i < nI.length; i++) {
+            System.out.println("Digite um numero:");
+            nI[i] = ler.nextInt();
+            if (nI[i] < 0) {
+                nI[i] = 0;
+            }
+        }
+        System.out.println("Resultado");
+        for (i = 0; i < nI.length; i++) {
+            System.out.println(nI[i]);
+        }
+    }
+
+}
+```
+# questao 7
+```java
 
 ```
