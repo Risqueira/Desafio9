@@ -273,3 +273,39 @@ public class Desafio9 {
 
 }
 ```
+# questao 10
+```java
+package desafio9;
+
+import java.util.Scanner;
+
+/**
+ * 10. Crie dois vetores A e B com 10 números inteiros. Gere um terceiro vetor C
+ * contendo o maior valor entre A[i] e B[i] em cada posição.
+ *
+ * @author Henrique
+ */
+public class Desafio9 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        int[] a = {2, 8, 9, 20, 58, 7, 60, 10, 5, 23};
+        int[] b = {5, 114, 196, 37, 174, 96, 49, 80, 29, 3};
+        int[] c = new int[10];
+
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] > b[i]) {
+                c[i] = a[i];
+            } else {
+                c[i] = b[i];
+            }
+        }
+        System.out.println("Os maiores numeros entre os 2 vetores de cada posição:");
+        for (int i = 0; i < c.length; i++) {
+            System.out.println("C[" + i + "]=" + c[i]);
+        }
+
+    }
+
+}
+```
